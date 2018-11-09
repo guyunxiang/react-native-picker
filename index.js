@@ -42,7 +42,7 @@ export default {
             select: opt.onPickerSelect
         };
 
-        Picker._init(opt);
+        Picker.init(opt);
         //there are no `removeListener` for NativeAppEventEmitter & DeviceEventEmitter
         this.listener && this.listener.remove();
         this.listener = NativeAppEventEmitter.addListener('pickerEvent', event => {
